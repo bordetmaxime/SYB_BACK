@@ -28,7 +28,7 @@ const boxController = {
             const {title, description, category, link, userid } = req.body;
 
                 Box.create({
-                    box_title = title,
+                    box_title : title,
                     box_description: description,
                     box_link: link,
                     box_category: category,

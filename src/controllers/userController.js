@@ -1,5 +1,5 @@
 const { User, restore } = require('../models');
-const { userView} = require('../dataviews/useriew');
+const { userView} = require('../dataviews/userView');
 const bcrypt = require('bcrypt');
 
 
