@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types":"module",
+  "types": "module",
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "dev": "npm install"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/bordetmaxime/SYB_BACK#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "sequelize": "^6.26.0"
   }
 }
