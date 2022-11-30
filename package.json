@@ -7,7 +7,7 @@
   "scripts": {
     "start":"node index.js",
     "dev": "npx nodemon"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bordetmaxime/SYB_BACK.git"
