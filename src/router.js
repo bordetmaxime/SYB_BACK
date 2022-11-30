@@ -7,7 +7,7 @@ const router = express.Router();
  * DEBUG
  */
 router.get('/api', (req, res) => {
-  res.send('hello world');
+  res.send("ça fonctionne");
 });
 
 
