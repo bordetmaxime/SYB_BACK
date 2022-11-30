@@ -20,8 +20,8 @@ CREATE TABLE "box" (
     "box_category" VARCHAR(50) NOT NULL DEFAULT '',
     "box_link" VARCHAR(50) NOT NULL DEFAULT '',
     "box_user_id" INTEGER NOT NULL REFERENCES  "user"("user_id") ON DELETE CASCADE,
-    "user_created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    "user_updated_at" TIMESTAMPTZ
+    "box_created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "box_updated_at" TIMESTAMPTZ
 );
 
 
