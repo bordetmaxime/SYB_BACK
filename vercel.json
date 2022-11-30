@@ -1,5 +1,11 @@
 
+{
+    
+    "routes": [{
 
-  {
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
-  }
+"src": "/",
+"dest" : "src/router.js"
+
+
+}]
+}
