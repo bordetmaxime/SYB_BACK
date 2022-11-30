@@ -19,10 +19,19 @@ CREATE TABLE "box" (
     "box_description" VARCHAR(100) NOT NULL DEFAULT '',
     "box_category" VARCHAR(50) NOT NULL DEFAULT '',
     "box_link" VARCHAR(50) NOT NULL DEFAULT '',
-    "box_user_id" INTEGER NOT NULL REFERENCES user("user_id") ON DELETE CASCADE,
+    "box_user_id" INTEGER NOT NULL REFERENCES  "user"("user_id") ON DELETE CASCADE,
     "user_created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     "user_updated_at" TIMESTAMPTZ
 );
+
+
+INSERT INTO "user" ("user_id", "user_firstname", "user_lastname", "user_email", "user_password")
+ VALUES (1, 'maxime', 'bordet', 'maxime.bordet83@gmail.com', 'maximebordet');
+INSERT INTO "box" ("box_id", "box_title", "box_description", "box_category", "box_link", "box_user_id")
+ VALUES (1, 'Le con é mara', 'rare espece de crustacé', 'débilité', 'www.débilite.fr', 1);
+ 
+
+
 
 
 COMMIT;

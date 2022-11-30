@@ -6,21 +6,21 @@ const router = express.Router();
 /**
  * DEBUG
  */
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
   res.send('hello world');
 });
 
 
 /* user */
 
-router.post('/user', userController.createOrModify);
-router.get('/user/userid', userController.getUser);
+router.post('/api/user', userController.createOrModify, );
+router.get('/api/user/userid', userController.getUser);
 
 /* box */
-router.get('/userbox/:id', boxController.getAllBox);
-router.get('/box/:id', boxController.findOneBox);
-router.post('/box', boxController.createOrModify);
-router.delete('/box/:id/delete', boxController.deleteBox);
+router.get('/api/userbox/:id', boxController.getAllBox);
+router.get('/api/box/:id', boxController.findOneBox);
+router.post('/api/box', boxController.createOrModify);
+router.delete('/api/box/:id/delete', boxController.deleteBox);
 
 
 
