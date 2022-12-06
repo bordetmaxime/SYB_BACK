@@ -10,8 +10,7 @@ const userController = {
    try{
 const email = req.body.email;
 const password = req.body.password;
-
-const userSearch = await User.findAll({where : {user_email: email}})
+const userSearch = await User.findOne({where : {user_email: email}})
 const goodPassword = await bcrypt.compare(password, userSearch.user_password);
 
   if(goodPassword){
