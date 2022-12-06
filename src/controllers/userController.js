@@ -32,7 +32,7 @@ next(err);
     createOrModify: async (req, res, next) => {
         try {
 
-          const hashPassword = await bcrypt.hash(req.body.password, 5);
+          const hashPassword = await bcrypt.hash(req.body.password, 10);
              
         await User.create({
             user_firstname: req.body.firstname,

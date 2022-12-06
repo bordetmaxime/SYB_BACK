@@ -6,7 +6,7 @@ CREATE TABLE "user" (
     "user_firstname" VARCHAR(7) NOT NULL DEFAULT '',
     "user_lastname" VARCHAR(7) NOT NULL DEFAULT '',
     "user_email" VARCHAR(50) NOT NULL DEFAULT '',
-    "user_password" VARCHAR(50) NOT NULL DEFAULT '',
+    "user_password" VARCHAR(100) NOT NULL DEFAULT '',
     "user_created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     "user_updated_at" TIMESTAMPTZ
 );
