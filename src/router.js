@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 /* user */
 
 router.post('/user', userController.createOrModify, );
-router.get('/user/userid', userController.getUser);
+router.get('/user/login', userController.getUser);
 
 /* box */
 router.get('/userbox/:id', boxController.getAllBox);

@@ -33,11 +33,12 @@ next(err);
         try {
 
           const hashPassword = await bcrypt.hash(req.body.password, 10);
+          const {firstname, lastname, email} = req.body;
              
         await User.create({
-            user_firstname: req.body.firstname,
-            user_lastname: req.body.lastname,
-            user_email: req.body.email,
+            user_firstname: firstname,
+            user_lastname: lastname,
+            user_email: email,
             user_password: hashPassword,
           });
 
