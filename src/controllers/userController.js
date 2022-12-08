@@ -9,6 +9,7 @@ const userController = {
   getUser : async (req,res,next) => {
    try{
 const email = req.body.email;
+const connected = true
 const password = req.body.password;
 const userSearch = await User.findOne({where : {user_email: email}})
 const goodPassword = await bcrypt.compare(password, userSearch.user_password);

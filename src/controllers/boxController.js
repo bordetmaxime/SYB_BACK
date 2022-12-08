@@ -48,7 +48,7 @@ deleteBox: async (req, res, next) => {
         const boxId = req.params.id;
         const box = await Box.findByPk(boxId);
         if (box) {
-          await Box.destroy();
+          await box.destroy();
           res.json('OK');
         } else {
           res.status(404).send(`Cant delete list with id ${boxId}`);
